@@ -33,7 +33,7 @@ namespace AdventOfCode2017.Day1
         {
             var runningTotal = 0;
 
-            for (int i = 0; i < intList.Count() - 1; i++)
+            for (int i = 0; i < intList.Count - 1; i++)
             {
                 if (intList[i] == intList[i + 1])
                 {
@@ -71,7 +71,7 @@ namespace AdventOfCode2017.Day1
         {
             var runningTotal = 0;
 
-            for (int i = 0; i < intList.Count(); i++)
+            for (int i = 0; i < intList.Count; i++)
             {
                 if (intList[i] == intList[(i + intList.Count / 2) % intList.Count])
                 {
