@@ -69,24 +69,13 @@ namespace AdventOfCode2017.Day1
 
         private int SumMidpointMatches(List<int> intList)
         {
-            var midPoint = intList.Count() / 2;
             var runningTotal = 0;
 
             for (int i = 0; i < intList.Count(); i++)
             {
-                if (i < midPoint)
+                if (intList[i] == intList[(i + intList.Count / 2) % intList.Count])
                 {
-                    if (intList[i] == intList[i + midPoint])
-                    {
-                        runningTotal += intList[i];
-                    }
-                }
-                else
-                {
-                    if (intList[i] == intList[i - midPoint])
-                    {
-                        runningTotal += intList[i];
-                    }
+                    runningTotal += intList[i];
                 }
             }
 
