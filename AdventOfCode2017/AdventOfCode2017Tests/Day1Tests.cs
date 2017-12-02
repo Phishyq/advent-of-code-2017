@@ -20,7 +20,7 @@ namespace AdventOfCode2017Tests
         /// 1122 produces a sum of 3 (1 + 2) because the first digit (1) matches the second digit and the third digit (2) matches the fourth digit.
         /// </summary>
         [TestMethod]
-        public void Part1_FindAllSets()
+        public void Day1_Part1_FindAllSets()
         {
             // Arrange
             var testInput = "1122";
@@ -36,7 +36,7 @@ namespace AdventOfCode2017Tests
         /// 1111 produces 4 because each digit(all 1) matches the next.
         /// </summary>
         [TestMethod]
-        public void Part1_Quadruplet()
+        public void Day1_Part1_Quadruplet()
         {
             // Arrange
             var testInput = "1111";
@@ -52,7 +52,7 @@ namespace AdventOfCode2017Tests
         /// 1234 produces 0 because no digit matches the next.
         /// </summary>
         [TestMethod]
-        public void Part1_NoRepeatingNumbers()
+        public void Day1_Part1_NoRepeatingNumbers()
         {
             // Arrange
             var testInput = "1234";
@@ -68,7 +68,7 @@ namespace AdventOfCode2017Tests
         /// 91212129 produces 9 because the only digit that matches the next one is the last digit, 9.
         /// </summary>
         [TestMethod]
-        public void Part1_CheckLastCharacter()
+        public void Day1_Part1_CheckLastCharacter()
         {
             // Arrange
             var testInput = "91212129";
@@ -88,7 +88,7 @@ namespace AdventOfCode2017Tests
         /// 1212 produces 6: the list contains 4 items, and all four digits match the digit 2 items ahead.
         /// </summary>
         [TestMethod]
-        public void Part2_AllMatch()
+        public void Day1_Part2_AllMatch()
         {
             // Arrange
             var testInput = "1212";
@@ -104,7 +104,7 @@ namespace AdventOfCode2017Tests
         /// 1221 produces 0, because every comparison is between a 1 and a 2.
         /// </summary>
         [TestMethod]
-        public void Part2_NoMatches()
+        public void Day1_Part2_NoMatches()
         {
             // Arrange
             var testInput = "1221";
@@ -120,7 +120,7 @@ namespace AdventOfCode2017Tests
         /// 123425 produces 4, because both 2s match each other, but no other digit has a match.
         /// </summary>
         [TestMethod]
-        public void Part2_OnlyOneMatch()
+        public void Day1_Part2_OnlyOneMatch()
         {
             // Arrange
             var testInput = "123425";
@@ -136,7 +136,7 @@ namespace AdventOfCode2017Tests
         /// 123123 produces 12.
         /// </summary>
         [TestMethod]
-        public void Part2_AllMatch_LongerInput()
+        public void Day1_Part2_AllMatch_LongerInput()
         {
             // Arrange
             var testInput = "123123";
@@ -152,7 +152,7 @@ namespace AdventOfCode2017Tests
         /// 12131415 produces 4.
         /// </summary>
         [TestMethod]
-        public void Part2_SomeMatches()
+        public void Day1_Part2_SomeMatches()
         {
             // Arrange
             var testInput = "12131415";
