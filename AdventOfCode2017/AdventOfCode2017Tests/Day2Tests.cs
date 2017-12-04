@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AdventOfCode2017.Day1;
+using AdventOfCode2017;
 using System.Collections.Generic;
 
 namespace AdventOfCode2017Tests
