@@ -7,11 +7,11 @@ namespace AdventOfCode2017
         static void Main(string[] args)
         {
             // Setup
-            var Day3 = new Day3Solution();
-            var input = Day3.GetInputFromFile();
+            var Day4 = new Day4Solution();
+            var input = Day4.GetInputFromFile();
 
             // Solve puzzle
-            var result = Day3.SolvePart2(input);
+            var result = Day4.SolvePart2(input);
 
             // Write result(s)
             Console.WriteLine(result);
