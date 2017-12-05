@@ -35,8 +35,8 @@ namespace AdventOfCode2017
 
             foreach (var passphrase in passphraseList)
             {
-                List<string> splitPhrase = passphrase.Split(' ').ToList();
-                validPassphraseCount += (splitPhrase.Count == splitPhrase.Distinct().Count()) ? 1 : 0;
+                List<string> words = passphrase.Split(' ').ToList();
+                validPassphraseCount += (words.Count == words.Distinct().Count()) ? 1 : 0;
             }
 
             return validPassphraseCount;
@@ -57,7 +57,7 @@ namespace AdventOfCode2017
         //  iiii oiii ooii oooi oooo is valid.
         //  oiii ioii iioi iiio is not valid - any of these words can be rearranged to form any other word.
 
-        //Under this new system policy, how many passphrases are valid?
+        // Under this new system policy, how many passphrases are valid?
 
         public int SolvePart2(IEnumerable<string> inputStrings)
         {
@@ -70,15 +70,15 @@ namespace AdventOfCode2017
 
             foreach (var passphrase in passphraseList)
             {
-                List<string> splitPhrase = passphrase.Split(' ').ToList();
-                var sortedPhrases = new List<string>();
+                List<string> words = passphrase.Split(' ').ToList();
+                var sortedWords = new List<string>();
 
-                foreach(var phrase in splitPhrase)
+                foreach(var word in words)
                 {
-                    sortedPhrases.Add(new string(phrase.OrderBy(c => c).ToArray()));
+                    sortedWords.Add(new string(word.OrderBy(c => c).ToArray()));
                 }
 
-                validPassphraseCount += (sortedPhrases.Count == sortedPhrases.Distinct().Count()) ? 1 : 0;
+                validPassphraseCount += (sortedWords.Count == sortedWords.Distinct().Count()) ? 1 : 0;
             }
 
             return validPassphraseCount;
